@@ -1,0 +1,21 @@
+#+title: cl-engine
+#+author: Annwan
+
+C-Lua engine
+A small (some might even say minimalist) game engine for/writen in C and Lua
+
+** Goals
+*** TODO Get stuff on screen
+*** TODO Give lua access to the engine
+*** TODO Load images
+
+** Building
+
+Prerequisites:
+- A C Compiler
+- Lua development libraries
+- OpenGL development libraries
+  
+#+begin_src sh
+make
+#+end_src
