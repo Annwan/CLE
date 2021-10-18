@@ -1,6 +1,8 @@
 #+title: cl-engine
 #+author: Annwan
 
+*THIS CODE IS NOT PRODUCTION READY AT ALL, USE AT YOUR OWN RISK*
+
 C-Lua engine
 A small (some might even say minimalist) game engine for/writen in C and Lua
 
