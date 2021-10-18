@@ -46,7 +46,7 @@ int CLE_main(int w, int h, const char *title,
   glBindVertexArray(VertexArrayID);
 
   glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
-  
+
   // run onStart callback
   if (!onStart(window, state)) {
     fprintf(stderr, "onStart callback failed");
@@ -63,7 +63,7 @@ int CLE_main(int w, int h, const char *title,
     glfwSwapBuffers(window);
     last = current;
   } while (cont && !glfwWindowShouldClose(window));
-  
+
   return 0;
 };
 
@@ -80,7 +80,7 @@ GLuint CLE_load_shaders_from_file(const char *vertex_file_path,
   if (vertex_source == NULL) return 0;
   fread(vertex_source, sizeof(char), vertex_shader_len, vertex_file);
   fclose(vertex_file);
-  
+
   // Read fragment shader
   FILE * frag_file = fopen(fragment_file_path, "r");
   if (frag_file == NULL) return 0;
@@ -146,13 +146,13 @@ GLuint CLE_load_shaders_from_source(const char * vertex_source, const char * fra
     glGetProgramInfoLog(prog_id, info_len, NULL, prog_error_message);
     fprintf(stderr, "%s\n", prog_error_message);
     free(prog_error_message);
-  } 
+  }
 
   glDetachShader(prog_id, vertex_shader_id);
   glDetachShader(prog_id, frag_shader_id);
 
   glDeleteShader(vertex_shader_id);
   glDeleteShader(frag_shader_id);
-  
+
   return prog_id;
 }
