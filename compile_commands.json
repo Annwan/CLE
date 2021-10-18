@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/annwan/git/CLE/CLE",
+  "command": "/usr/bin/cc    -o CMakeFiles/CLE.dir/core.c.o -c /home/annwan/git/CLE/CLE/core.c",
+  "file": "/home/annwan/git/CLE/CLE/core.c"
+},
+{
+  "directory": "/home/annwan/git/CLE/src",
+  "command": "/usr/bin/cc  -I/home/annwan/git/CLE/src/..  -o CMakeFiles/example.dir/example.c.o -c /home/annwan/git/CLE/src/example.c",
+  "file": "/home/annwan/git/CLE/src/example.c"
+}
+]
